@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Exercise (Chapter 1: Introduction to Java) — Strings and StringBuilder.
  *
@@ -26,6 +29,11 @@ public class FirstLetters {
      */
     public static String firstLetters(String words) {
         // TODO: complete
-        return "";
+        StringBuilder result = new StringBuilder("");
+        String[] m = words.split(" ");
+        for (String w : m) {
+            result.append(w.charAt(0));
+        }
+        return result.toString();
     }
 }
